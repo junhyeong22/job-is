@@ -1,7 +1,7 @@
 streamlit
 streamlit-aggrid
 streamlit-option-menu
-langchain
+langchain>=0.3.0
 langchain-community
 langchain-huggingface
 openai
@@ -10,3 +10,4 @@ faiss-cpu
 pandas
 openpyxl
 folium
+
