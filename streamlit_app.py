@@ -16,7 +16,7 @@ from folium import Popup, Marker
 from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode
 from langchain_community.vectorstores import FAISS
-from langchain.chains.retrieval_qa.base import RetrievalQA
+from langchain_community.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 from langchain.schema.messages import BaseMessage, HumanMessage, AIMessage
 from langchain.chat_models.base import BaseChatModel
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
