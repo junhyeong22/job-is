@@ -10,5 +10,6 @@ langchain-huggingface
 sentence-transformers
 faiss-cpu
 openai
+libomp-dev
 
 
