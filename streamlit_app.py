@@ -33,15 +33,15 @@ import streamlit.components.v1 as components
 # ───────────────────────────────────────────
 # Streamlit 기본 설정 (타이틀, 아이콘, 레이아웃)
 st.set_page_config(
-    page_title="JOB-IS",
-    page_icon="https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png",
-    layout="wide"
+    page_title="JOB-IS",
+    page_icon="https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png",
+    layout="wide"
 )
 
 # 시작 페이지 (로고 및 이용 버튼 표시)
 def start_page():
-    if "started" not in st.session_state:
-        col1, col2, col3 = st.columns([1, 2, 1])  # 가운데 정렬
+    if "started" not in st.session_state:
+        col1, col2, col3 = st.columns([1, 2, 1])  # 가운데 정렬
         with col2:
             st.markdown("""
                 <div style="
@@ -274,10 +274,9 @@ with st.sidebar:
             },
         }
     )
-# ▶️ 시연 영상
+    # ▶️ 시연 영상
     st.sidebar.markdown("#### ▶️ 시연 영상")
     st.sidebar.video("[https://youtu.be/XwpaQ3lSH88](https://youtu.be/XwpaQ3lSH88)")
-    
 # 사이드바 선택 값에 따른 페이지 분기
 Guide = choice == "Guide"
 Career = choice == "Career Chat"
@@ -1039,6 +1038,3 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
-
-
-
