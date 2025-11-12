@@ -842,7 +842,7 @@ if Career:
             <div style='background-color:#f9f9f9; padding:0px 0px; border-radius:12px; border:1px solid #ddd; 
                         width:20%; margin: 0 auto; text-align: center;'>
                 <h1 style='margin:0; font-size:24px; display: flex; align-items: center; justify-content: center; gap: 10px; color: #000;'>
-                    <img src='https://raw.githubusercontent.com/seungcheoll/busan/main/image/GPT_image2.png' 
+                    <img src='https://raw.githubusercontent.com/junhyeong22/job-is/main/image/GPT_image2.png' 
                          style='width: 40px; height: auto; vertical-align: middle;'/>
                     Career Chat
                 </h1>
@@ -877,7 +877,7 @@ if Career:
                         f"""
                         <div style='display: flex; align-items: flex-start; gap: 10px;'>
                             <img 
-                                src='https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png' 
+                                src='https://raw.githubusercontent.com/junhyeong22/job-is/main/image/jobis.png' 
                                 style='width: 40px; height: auto; margin-top: 4px;'
                             />
                             <div 
@@ -961,7 +961,7 @@ if Dreamer:
         <div style='background-color:#f9f9f9; padding:0px 0px; border-radius:12px; border:1px solid #ddd; 
                     width:20%; margin: 0 auto; text-align: center;'>
             <h1 style='margin:0; font-size:24px; display: flex; align-items: center; justify-content: center; gap: 10px; color: #000;'>
-                <img src='https://raw.githubusercontent.com/seungcheoll/busan/main/image/GPT_image2.png' 
+                <img src='https://raw.githubusercontent.com/junhyeong22/job-is/main/image/GPT_image2.png' 
                      style='width: 40px; height: auto; vertical-align: middle;'/>
                 Dream Chat
             </h1>
@@ -988,7 +988,7 @@ if Dreamer:
                     f"""
                     <div style='display: flex; align-items: flex-start; gap: 10px;'>
                         <img 
-                            src='https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png' 
+                            src='https://raw.githubusercontent.com/junhyeong22/job-is/main/image/jobis.png' 
                             style='width: 40px; height: auto; margin-top: 4px;' />
                         <div style='background-color:#f0f0f0; padding:12px; border-radius:8px; max-width:100%; color:black;'>
                             {msg['content']}
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
