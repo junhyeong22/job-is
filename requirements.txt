@@ -5,6 +5,7 @@ openpyxl
 folium
 streamlit-aggrid
 langchain
+langchain-community
 langchain-huggingface
 sentence-transformers
 faiss-cpu
