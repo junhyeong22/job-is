@@ -40,8 +40,8 @@ st.set_page_config(
 
 # 시작 페이지 (로고 및 이용 버튼 표시)
 def start_page():
-    if "started" not in st.session_state:
-        col1, col2, col3 = st.columns([1, 2, 1])  # 가운데 정렬
+    if "started" not in st.session_state:
+        col1, col2, col3 = st.columns([1, 2, 1])  # 가운데 정렬
         with col2:
             st.markdown("""
                 <div style="
@@ -1039,5 +1039,6 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
