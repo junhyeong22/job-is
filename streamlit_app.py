@@ -504,7 +504,7 @@ if Career:
                     return_source_documents=True,
                     chain_type_kwargs={"prompt": prompt}
                 )
-                last_error = None
+                
                 for _ in range(3):  # 최대 3번만 시도
                     try:
                         result = qa_chain.invoke({"query": query})
@@ -1014,6 +1014,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
