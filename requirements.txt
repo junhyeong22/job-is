@@ -1,14 +1,14 @@
 streamlit
-streamlit-aggrid
 streamlit-option-menu
-langchain
-langchain-community
-langchain-huggingface
-openai
-sentence-transformers
-faiss-cpu
 pandas
 openpyxl
 folium
+st-aggrid
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+openai
 
 
