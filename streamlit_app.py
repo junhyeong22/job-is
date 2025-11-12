@@ -21,7 +21,7 @@ from langchain_core.prompts import PromptTemplate
 from langchain_core.messages import BaseMessage, HumanMessage, AIMessage
 from langchain.chat_models.base import BaseChatModel
 from langchain_core.outputs import ChatResult
-from langchain_core import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from openai import OpenAI
 import json
 import streamlit.components.v1 as components
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
