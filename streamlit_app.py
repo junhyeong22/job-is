@@ -512,12 +512,15 @@ if Career:
                         text = text_to_json(text)
                         st.session_state.gpt_result = text["전체 출력 결과"]
                         st.session_state.company_name_by_gpt = text["기업명"]
+                        st.session_state.source_docs = result["source_documents"]
+                        success = True
                         break
-                    except:
+                    except Exception as e:
+                        last_error = e
                         continue
-                else:
+                if not success:
                     st.error(f"응답 처리에 실패했습니다: {last_error}")
-                st.session_state.source_docs = result["source_documents"]
+                #st.session_state.source_docs = result["source_documents"]
     
                 # 다시 비우기 전 최종 저장
                 st.session_state["saved_query"] = query
@@ -1013,6 +1016,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
