@@ -7,7 +7,7 @@ from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode, DataReturnMode
 from langchain_community.vectorstores import FAISS
 
-from langchain.chains import create_retrieval_chain
+from langchain_classic.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
 from langchain.prompts import PromptTemplate
@@ -912,3 +912,4 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
