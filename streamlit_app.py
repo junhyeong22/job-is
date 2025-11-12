@@ -50,7 +50,7 @@ def start_page():
                     width: 500px;
                     margin: 0 auto;
                 ">
-                    <img src="https://raw.githubusercontent.com/seungcheoll/busan/main/image/logo_raw.png" 
+                    <img src="https://raw.githubusercontent.com/junhyeong22/job-is/main/image/logo_raw.png" 
                          style="width: 500px; height: 250px; display: block; margin: 0 auto;">
                 </div>
             """, unsafe_allow_html=True)
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
