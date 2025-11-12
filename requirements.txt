@@ -3,13 +3,14 @@ streamlit-option-menu
 pandas
 openpyxl
 folium
-st-aggrid
+streamlit-aggrid
 langchain
 langchain-community
 langchain-huggingface
 sentence-transformers
 faiss-cpu
 openai
+
 
 
 
