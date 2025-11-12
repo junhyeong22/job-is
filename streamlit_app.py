@@ -33,7 +33,7 @@ import streamlit.components.v1 as components
 # ───────────────────────────────────────────
 # Streamlit 기본 설정 (타이틀, 아이콘, 레이아웃)
 st.set_page_config(
-    page_title="JOB-IS",
+    page_title="JOB-IS",
     page_icon="https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png",
     layout="wide"
 )
@@ -1039,3 +1039,4 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
