@@ -515,7 +515,7 @@ if Career:
                         break
                     except:
                         continue
-                if not success:
+                else:
                     st.error(f"응답 처리에 실패했습니다: {last_error}")
                 st.session_state.source_docs = result["source_documents"]
     
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
