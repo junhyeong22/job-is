@@ -32,7 +32,7 @@ import streamlit.components.v1 as components
 # Streamlit 기본 설정 (타이틀, 아이콘, 레이아웃)
 st.set_page_config(
     page_title="JOB-IS",
-    page_icon="https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png",
+    page_icon="https://raw.githubusercontent.com/junhyeong22/job-is/main/image/jobis.png",
     layout="wide"
 )
 
@@ -286,7 +286,7 @@ Dreamer = choice == "Dream Chat"
 if Guide:
     st.markdown("""
     <h1 style='text-align: center;'>
-      <img src="https://raw.githubusercontent.com/seungcheoll/busan/main/image/logo_guide.png" 
+      <img src="https://raw.githubusercontent.com/junhyeong22/job-is/main/image/logo_guide.png" 
            style="width: 180px; height: 70px; vertical-align: middle; margin-right: 0px;">
     </h1>
     """, unsafe_allow_html=True)
@@ -374,7 +374,7 @@ if Guide:
           </p>
           <hr class="custom"/>
           <img
-            src="https://raw.githubusercontent.com/seungcheoll/busan/main/image/flow.png"
+            src="https://raw.githubusercontent.com/junhyeong22/job-is/main/image/flow.png"
             alt="JobBusan RAG 처리 구조도"
             style="width:600px; height:510px; display:block; margin:0 auto; padding-top: 20px;"
           />
@@ -430,7 +430,7 @@ if Career:
             
         st.markdown("""
             <div style='padding: 10px 0px; display: flex; align-items: center; gap: 10px;'>
-                <img src='https://raw.githubusercontent.com/seungcheoll/busan/main/image/jobis.png' 
+                <img src='https://raw.githubusercontent.com/junhyeong22/job-is/main/image/jobis.png' 
                      style='width: 45px; height: 45px;'>
                 <span style='font-size:28px; font-weight: bold;'>Career Chat(기업 매칭 서비스)</span>
             </div>
@@ -1013,6 +1013,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
