@@ -8,5 +8,6 @@ langchain
 langchain-community
 langchain-huggingface
 sentence-transformers
-faiss-cpu
+faiss
 openai
+
