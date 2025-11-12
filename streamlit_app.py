@@ -514,12 +514,12 @@ if Career:
                         st.session_state.gpt_result = text["전체 출력 결과"]
                         st.session_state.company_name_by_gpt = text["기업명"]
                         break
-                    except:Exception as e:  # 2. 오류를 'e'라는 변수로 잡기
+                    except Exception as e:  # 2. 오류를 'e'라는 변수로 잡기
                         last_error = e      # 3. 마지막 오류를 변수에 저장
                         continue
                 else:
                     st.error(f"응답 처리에 실패했습니다: {last_error}")
-                #st.session_state.source_docs = result["source_documents"]
+                st.session_state.source_docs = result["source_documents"]
     
                 # 다시 비우기 전 최종 저장
                 st.session_state["saved_query"] = query
@@ -1015,6 +1015,7 @@ if Dreamer:
             answer_dream = st.session_state.dream_chat._call(history_dream)
             st.session_state.dream_history.append({"role": "assistant", "content": answer_dream})
         st.rerun()
+
 
 
 
