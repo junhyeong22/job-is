@@ -31,3 +31,12 @@
 ## 📈 기대 효과 및 비전
 - **고용 정책 실효성 강화**: 구직 만족도 향상 및 장기근속 유도를 통해 지역 내 일자리 미스매칭 문제를 실질적으로 해소합니다.
 - **뛰어난 확장성**: 현재 부산 지역 중심의 데이터 모델을 기반으로 설계되었으나, 다차원 인덱싱을 통해 향후 전국 단위 지자체 및 공공기관을 연결하는 '고용정보 허브 플랫폼'으로 확장이 가능합니다.
+
+<img width="514" height="220" alt="스크린샷 2026-03-19 115448" src="https://github.com/user-attachments/assets/239d2274-aba7-4325-b8b5-6d9c2f8eca8a" />
+<img width="399" height="188" alt="스크린샷 2026-03-19 115501" src="https://github.com/user-attachments/assets/6658b6aa-0a89-4783-8bc4-f9574d275a14" />
+<img width="437" height="218" alt="스크린샷 2026-03-19 115511" src="https://github.com/user-attachments/assets/aa35988f-113f-4585-819c-de85b1fa5b54" />
+<img width="323" height="220" alt="스크린샷 2026-03-19 115525" src="https://github.com/user-attachments/assets/0f9022f3-1e88-4338-b74e-7151f1436516" />
+
+
+
+
